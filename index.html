@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>jQuery Mobile Web App</title>
+    <!--<link href="styles/custom.css" rel="stylesheet" />-->
+    <link href="styles/jquery.mobile-1.4.5.min.css" rel="stylesheet" />
+    <!--<link href="styles/jquery.mobile.theme-1.4.5.css" rel="stylesheet" />-->
+    <link href="styles/jquery.mobile.icons.min.css" rel="stylesheet" />
+    <link href="styles/jquery.mobile.structure-1.4.5.min.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="javascript/jquery.mobile-1.4.5.min.js"></script>
+    <script src="javascript/custom.js"></script>
+    <script src="javascript/data.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+    <!-- *** Main page *** -->
+    <div data-role="page" id="page-home">
+        <div data-role="header" style="text-align:center;" data-theme="b">
+            <div style="max-height: 72px;">
+                <img src="images/content/gamelogo.gif" style="max-width: 100%;" />
+            </div>
+        </div>
+        <div data-role="content">
+            <!--Main menu links-->
+            <ul data-role="listview">
+                <li><a href="#page-list-units">Units Guide</a></li>
+                <li><a href="#page-list-structures?id=8">Structures Guide</a></li>
+                <li><a href="#page-links">Useful Links</a></li>
+                <li><a href="#page-about-game">About the Game</a></li>
+                <li><a href="#page-about-app">About this App</a></li>
+            </ul>
+        </div>
+        <div data-role="footer" data-theme="b">
+            <h4>Empires &amp; Allies Handbook</h4>
+        </div>
+    </div>
+
+
+    <!-- *** Auto rendered page - structures list *** -->
+    <div data-role="page" id="page-list-structures">
+        <div data-role="header" data-add-back-btn="true"><h1>Structures Guide</h1></div>
+        <div data-role="content"></div>
+        <div data-role="footer"><h4>Empires &amp; Allies Handbook</h4></div>
+    </div>
+    <!-- *** Auto rendered page - units list *** -->
+    <div data-role="page" id="page-list-units">
+        <div data-role="header" data-add-back-btn="true"><h1>Units Guide</h1></div>
+        <div data-role="content"></div>
+        <div data-role="footer"><h4>Empires &amp; Allies Handbook</h4></div>
+    </div>
+
+
+    <!-- *** Auto rendered page - structures detail *** -->
+    <div id="page-detail-structure" data-role="page">
+        <div data-role="header" data-add-back-btn="true"><h1>dynamic</h1></div>
+        <div data-role="content">
+            <div class="ui-body ui-body-a ui-corner-all" id="structureDetailPane">
+                <div style="text-align:center;">
+                    <img src="" alt="dynamic icon" id="structureImg" height="200" class="ui-overlay-shadow ui-shadow ui-corner-all" />
+                </div>
+                <h3>Building Type: <span id="structureType"></span></h3>
+                <h4>Building Info: <span id="structureInfo"></span></h4>
+                <div data-role="collapsible-set" data-inset="true" id="collapsDetails"></div>
+            </div>
+        </div>
+        <div data-role="footer"><h4>Empires &amp; Allies Handbook</h4></div>
+    </div>
+    <!-- *** Auto rendered page - units detail *** -->
+    <div data-role="page" id="page-detail-unit">
+        <div data-role="header" data-add-back-btn="true"><h1>dynamic</h1></div>
+        <div data-role="content">
+            <div class="ui-body ui-body-a ui-corner-all" id="structureDetailPane">
+                <div style="text-align:center;">
+                    <img src="" alt="dynamic icon" id="unitImg" height="200" class="ui-overlay-shadow ui-shadow ui-corner-all" />
+                </div>
+                <h3>Unit Damage Type: <span id="unitDamageType"></span></h3>
+                <h4>Unit Info: <span id="unitInfo"></span></h4>
+                <div data-role="collapsible-set" data-inset="true" id="unitCollapsDetails"></div>
+            </div>
+        </div>
+        <div data-role="footer"><h4>Empires &amp; Allies Handbook</h4></div>
+    </div>
+
+
+    <!-- *** page - useful links *** -->
+    <div data-role="page" id="page-links">
+        <div data-role="header" data-add-back-btn="true"><h1>Useful Links</h1></div>
+        <div data-role="content">
+            Please keep in mind that none of the links provided below are in any way affiliated with us and we cannot be responsible for the content.
+            <ul data-role="listview" data-inset="true">
+                <li><a href="https://youtu.be/xp8sWWBayTQ" class="ui-icon-video">Official Trailer (YouTube)</a></li>
+                <li><a href="https://play.google.com/store/apps/details?id=com.zynga.empires2&hl=en">E&A on Google Play</a></li>
+                <li><a href="https://itunes.apple.com/us/app/empires-allies/id898838405?mt=8">E&A on Apple iTunes</a></li>
+                <li><a href="https://zynga.com/games/empires-and-allies">Company Game Page (Zynga)</a></li>
+                <li><a href="https://www.facebook.com/EmpiresAndAllies">Official Facebook Page</a></li>
+                <li><a href="https://twitter.com/EmpiresAllies">Official Twitter Page</a></li>
+                <li><a href="https://www.youtube.com/channel/UCl29qsF_-grwVNQSyqLcibw">Official YouTube Channel</a></li>
+                <li><a href="https://instagram.com/empiresandallies/">Official Instagram Page</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Empires_%26_Allies">E&A on Wikipedia</a></li>
+            </ul>
+        </div>
+        <div data-role="footer"><h4>Empires &amp; Allies Handbook</h4></div>
+    </div>
+    <!-- *** page - about the game *** -->
+    <div data-role="page" id="page-about-game">
+        <div data-role="header" data-add-back-btn="true"><h1>About the Game</h1></div>
+        <div data-role="content">
+            <div class="ui-body ui-body-a ui-corner-all">
+                <p>Empires &amp; Allies is a game developed by Zynga (http://www.zynga.com).</p>
+                <p>As quoted from the official website:</p>
+                <p><cite>Join your friends, form alliances, and get ready to build your empire. Welcome to Empires & Allies, an all-new modern military strategy game that puts the weapons of modern war at your fingertips in a never-ending battle to conquer the world.</cite></p>
+                <p><cite><b>DESIGN YOUR PERFECT ARMY</b> from the arsenals of today’s militaries with battle-hardened tanks, drones, helicopters, and more.</cite></p>
+                <p><cite><b>DEPLOY MODERN WEAPONS</b> including tactical nukes, hellfire missiles, and orbital strikes.</cite></p>
+                <p><cite><b>DYNAMIC BATTLEFIELDS</b> deliver increasingly difficult scenarios that emulate the unpredictability of warfare.</cite></p>
+                <p><cite><b>JOIN ALLIANCES</b> to fortify defenses and reinforce attacking units.</cite></p>
+                <p><cite><b>SAVE THE WORLD</b> from the GRA, an evil terrorist organization, and defend your territories from other players.</cite></p>
+            </div>
+        </div>
+        <div data-role="footer"><h4>Empires &amp; Allies Handbook</h4></div>
+    </div>
+    <!-- *** page - about this app *** -->
+    <div data-role="page" id="page-about-app">
+        <div data-role="header" data-add-back-btn="true"><h1>About this App</h1></div>
+        <div data-role="content">
+            <div class="ui-body ui-body-a ui-corner-all">
+                <p>The developers of this app are in no way affiliated with Zynga, the creator of the game (Empires &amp; Allies).</p>
+                <p>This app is developed for the sole purpose of serving game fans with updated game information and other helpful resources.</p>
+                <p>Got any questions? Have any suggestions? Noticed any bugs?</p>
+                <p>Feel free to contact us at admin@empires-allies.com.</p>
+            </div>
+        </div>
+        <div data-role="footer"><h4>Empires &amp; Allies Handbook</h4></div>
+    </div>
+</body>
+</html>

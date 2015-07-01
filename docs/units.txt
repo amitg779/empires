@@ -1,0 +1,14 @@
+name:
+info: "Rangers are an all-purpose fighting force made up of Riflemen, Rockets and Medics. Weak vs enemy infantry; Strong vs Spider Drones",
+population: 1,
+damageType: "Area",
+            targets: "Ground, Air, Structures, Units",
+            healPerSec: [0],
+            damagePerSec: [30, 0, 37],
+            hitpoints: [140, 0, 0],
+            trainingCost: [25, 0, 100],
+            trainingTime: 7,
+            requiredLevel: 1,
+            imageFile: function () {
+                return this.name.replace(/\s/g, '') + ".gif";
+            }

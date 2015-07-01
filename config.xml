@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+    xmlns:gap = "http://phonegap.com/ns/1.0"
+    xmlns:android   = "http://schemas.android.com/apk/res/android"
+    id        = "com.empires-allies.app"
+    version   = "0.0.1">
+
+  <name>Handbook for Empires &amp; Allies</name>
+
+  <description>
+    The ultimate handbook for Empires &amp; Allies - the new military mobile strategy game by Zynga.
+  </description>
+
+  <author href="http://empires-allies.com" email="cywiz@msn.com">
+    Amit Golan
+  </author>
+
+  <preference name="phonegap-version" value="3.6.3" />
+  <preference name="permissions" value="none"/>
+
+  <gap:platform name="android" />
+
+  <icon src="icon.png" />
+</widget>

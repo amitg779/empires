@@ -1,0 +1,32 @@
+desc: "The HQ is the central command structure for the entire base. Its level dictates what units and structures can be built at the base.",
+
+*** Finished ***
+-name
+-imageFile
+-type
+-info
+-buildTime
+-hitpoints
+-costCash
+-costIron
+-damagePerSec
+-productionOilMax
+-productionOilHourly
+-productionCashMax
+-productionCashHourly
+-storageCapacityOil
+-storageCapacityCash
+-storageCapacityIron
+-storageReserve
+-troopCapacity
+-commandPoints
+-upgradeExp
+-instantGold
+-levelBuildLimit
+-levelUpgradeLimit
+
+
+-Default
+-Operations
+-Defenses
+-Resources
