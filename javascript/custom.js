@@ -260,8 +260,9 @@ function buildHtmlContent(iconFile, title, length, obj) {
         postpend = '</div>';
     }
     else {
-        addStr += ': ' + obj;
-        prepend = '<div data-role="collapsible" data-iconpos="false" data-inset="true">';
+        //addStr += ': ' + obj;
+        rows = '<ul data-role="listview">' + '<li>All Levels: ' + obj + '</li>' + '</ul>';
+        prepend = '<div data-role="collapsible" data-iconpos="right" data-inset="true">';
         postpend = '</div>';
     }
     
