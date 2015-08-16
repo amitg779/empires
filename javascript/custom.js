@@ -97,7 +97,7 @@ $(document).on("pagebeforeshow", "#page-detail-structure", function (e, data) {
     var htmlStrDiv = '';
     // Find and set structure detail: buildTime
     if (structures[selectedId].buildTime !== undefined) {
-        htmlStr += htmlStrDiv + buildHtmlContent(0, 'Build Time', structures[selectedId].buildTime.length, structures[selectedId].buildTime);
+        htmlStr += htmlStrDiv + buildHtmlContent('info-clock', 'Build Time', structures[selectedId].buildTime.length, structures[selectedId].buildTime);
     }
     // Find and set structure detail: hitpoints
     if (structures[selectedId].hitpoints !== undefined) {
@@ -157,11 +157,11 @@ $(document).on("pagebeforeshow", "#page-detail-structure", function (e, data) {
     }
     // Find and set structure detail: upgradeExp
     if (structures[selectedId].upgradeExp !== undefined) {
-        htmlStr += htmlStrDiv + buildHtmlContent(0, 'Upgrade Experience', structures[selectedId].upgradeExp.length, structures[selectedId].upgradeExp);
+        htmlStr += htmlStrDiv + buildHtmlContent('info-experience', 'Upgrade Experience', structures[selectedId].upgradeExp.length, structures[selectedId].upgradeExp);
     }
     // Find and set structure detail: instantGold
     if (structures[selectedId].instantGold !== undefined) {
-        htmlStr += htmlStrDiv + buildHtmlContent(0, 'Instant Gold', structures[selectedId].instantGold.length, structures[selectedId].instantGold);
+        htmlStr += htmlStrDiv + buildHtmlContent('info-gold', 'Instant Gold', structures[selectedId].instantGold.length, structures[selectedId].instantGold);
     }
     // Find and set structure detail: levelBuildLimit
     if (structures[selectedId].levelBuildLimit !== undefined) {
@@ -220,7 +220,7 @@ $(document).on("pagebeforeshow", "#page-detail-unit", function (e, data) {
         htmlStr += htmlStrDiv + buildHtmlContent('info-cash', 'Training Cost', units[selectedId].trainingCost.length, units[selectedId].trainingCost);
     }
     if (units[selectedId].trainingTime !== undefined) {
-        htmlStr += htmlStrDiv + buildHtmlContent(0, 'Training Time', units[selectedId].trainingTime.length, units[selectedId].trainingTime);
+        htmlStr += htmlStrDiv + buildHtmlContent('info-clock', 'Training Time', units[selectedId].trainingTime.length, units[selectedId].trainingTime);
     }
     if (units[selectedId].requiredLevel !== undefined) {
         htmlStr += htmlStrDiv + buildHtmlContent(0, 'Required Level', units[selectedId].requiredLevel.length, units[selectedId].requiredLevel);
