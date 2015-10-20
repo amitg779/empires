@@ -19,6 +19,7 @@
   <preference name="permissions" value="none"/>
 
   <gap:platform name="android" />
+  <gap:plugin name="com.admob.google" />
 
   <icon src="icon.png" />
 </widget>

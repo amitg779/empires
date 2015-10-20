@@ -173,7 +173,20 @@ $(document).on("pagebeforeshow", "#page-detail-structure", function (e, data) {
     }
     // Finally append listview markup
     $content.find("#collapsDetails").html(htmlStr);
+
     
+    // Set AdMobAds options:
+    admob.setOptions({
+        publisherId: "ca-app-pub-XXXXXXXXXXXXXXXX/BBBBBBBBBB",  // Required
+        interstitialAdId: "ca-app-pub-XXXXXXXXXXXXXXXX/IIIIIIIIII",  // Optional
+        tappxIdiOs: "/XXXXXXXXX/Pub-XXXX-iOS-IIII",            // Optional
+        tappxIdAndroid: "/XXXXXXXXX/Pub-XXXX-Android-AAAA",        // Optional
+        tappxShare: 0.5                                        // Optional
+    });
+
+    // Start showing banners (atomatic when autoShowBanner is set to true)
+    admob.createBannerView();
+
     
     $page.page();
     //$content.find(":jqmData(role=listview)").listview();
